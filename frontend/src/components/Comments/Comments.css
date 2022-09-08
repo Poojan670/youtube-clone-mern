@@ -1,0 +1,19 @@
+.comment-container{
+
+}
+
+.new-comment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.comment-input{
+    border: none;
+    border-bottom: 1px solid var(---text-soft);
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+}
