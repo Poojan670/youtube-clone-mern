@@ -4,6 +4,7 @@ import {ThumbUpOffAltOutlined} from "@mui/icons-material";
 import {ThumbDownOffAltOutlined} from "@mui/icons-material";
 import {ReplyOutlined} from "@mui/icons-material";
 import {AddTaskOutlined} from "@mui/icons-material";
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Comments from "../../components/Comments/Comments";
 import Card from "../../components/Card/Card";
 

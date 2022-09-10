@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fc20688-cc00-4d32-bda2-c9b9c2c91fa8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/node/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/api/urls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/middleware/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/middleware/pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/models/comments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/models/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/utils/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/src/utils/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node/swagger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EPBHCDXo7jmwrAUMdUUTS0kH25" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.13.1",
+    "javascript.nodejs.core.library.typings.version": "16.11.58",
+    "last_opened_file_path": "C:/Tasks/node-projects/video-sharing/backend/node/src/middleware",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Tasks\node-projects\video-sharing\backend\node\src\middleware" />
+      <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\pages\Video" />
+      <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\pages\Home" />
+      <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\components\Navbar" />
+      <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\components\Menu" />
+      <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\components\Card" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fc20688-cc00-4d32-bda2-c9b9c2c91fa8" name="Changes" comment="" />
+      <created>1662487250890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662487250890</updated>
+      <workItem from="1662487252377" duration="2066000" />
+      <workItem from="1662518753399" duration="1222000" />
+      <workItem from="1662532488710" duration="7131000" />
+      <workItem from="1662563771387" duration="14558000" />
+      <workItem from="1662625773783" duration="601000" />
+      <workItem from="1662643697153" duration="6464000" />
+      <workItem from="1662786644609" duration="4155000" />
+      <workItem from="1662790983440" duration="6186000" />
+      <workItem from="1662813764020" duration="5404000" />
+      <workItem from="1662822167803" duration="3815000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
