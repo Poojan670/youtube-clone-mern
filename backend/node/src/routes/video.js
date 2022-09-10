@@ -12,7 +12,7 @@ router.post('/', auth, postVideo)
 router.put('/:id', auth, updateVideo)
 router.delete('/:id', auth, deleteVideo)
 
-router.get('/:id', getVideo)
+router.get('/find/:id', getVideo)
 router.put('/view/:id', updateViews)
 router.get('/trending', getTrendingVideos)
 router.get('/random', getRandomVideos)

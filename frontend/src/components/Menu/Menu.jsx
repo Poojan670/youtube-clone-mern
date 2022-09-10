@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Menu.css'
+import axios from 'axios'
 import Youtube from "../../img/youtube-logo.png";
 import HomeIcon from '@mui/icons-material/Home';
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
@@ -19,20 +20,36 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import {SettingsBrightnessOutlined} from "@mui/icons-material";
 import {Link} from "react-router-dom";
 
-
 const Menu  = ({toggleTheme, theme}) => {
+
+    const [state,setState] = useState('NP');
+
+    useEffect(() => {
+        axios.get('https://ipapi.co/json/')
+            .then(response => {
+                setState(response.data.country_code)
+            })
+            .catch((data) => {
+                console.log('Request Failed', data)
+            })
+    },[])
+
     return (
         <div className="menu-container">
             <div className="menu-wrapper">
                 <Link to="/" className="router-link">
                 <div className="menu-logo">
                     <img src={Youtube} alt="youtube" className="menu-img"/>
-                    PoojanTube
+                    PoojanTube<span className="menu-country">{state}</span>
                 </div>
                 </Link>
                 <div className="menu-item"><HomeIcon/>Home</div>
+                <Link to="trending" style={{textDecoration:"none", color:"inherit"}}>
                 <div className="menu-item"><ExploreOutlinedIcon />Explore</div>
+                </Link>
+                <Link to="subscriptions" style={{textDecoration:"none", color:"inherit"}}>
                 <div className="menu-item"> <SubscriptionsOutlinedIcon/>Subscriptions</div>
+                </Link>
                 <div className="menu-hr"/>
                 <div className="menu-item"><VideoLibraryOutlinedIcon/>Library</div>
                 <div className="menu-item"><HistoryOutlinedIcon/>History</div>

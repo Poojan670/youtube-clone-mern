@@ -1,38 +1,25 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Home.css'
-import styled from "styled-components";
 import Card from "../../components/Card/Card";
+import axios from "axios";
 
-const Container = styled.div`
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-`;
+const Home = ({type}) => {
 
-const Home = () => {
+    const [videos,setVideos] = useState([]);
+
+    useEffect(()=>{
+        const getVideos = async () => {
+            const res = await axios.get(`/videos/${type}`)
+            setVideos(res.data)
+        }
+        getVideos()
+    }, [type])
         return (
-            <Container>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-            </Container>
+            <div className="home-container">
+                {videos.map(video => (
+                    <Card key={video._id} video={video}/>
+                ))}
+            </div>
         );
 };
 

@@ -26,7 +26,9 @@ function App() {
                       <div className="app-wrapper">
                           <Routes>
                               <Route path="/">
-                                  <Route index element={<Home/>} />
+                                  <Route index element={<Home type="random"/>} />
+                                  <Route path="trending" element={<Home type="trending"/>} />
+                                  <Route path="subscriptions" element={<Home type="sub"/>} />
                                   <Route path="video">
                                       <Route path=":id" element={<Video/>}/>
                                   </Route>

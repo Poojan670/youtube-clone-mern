@@ -14,7 +14,7 @@ export const postVideo = async (req,res,next) => {
 
 export const updateVideo = async(req,res,next) => {
     try{
-        const video = Video.findById(req.params.id)
+        const video = await Video.findById(req.params.id)
         if(!video) return next(apiError(404, "Video not found"))
         if(req.user.id === video.userId){
             const updatedVideo = await Video.findByIdAndUpdate(req.params.id,{
@@ -31,7 +31,7 @@ export const updateVideo = async(req,res,next) => {
 
 export const deleteVideo = async(req,res,next) => {
     try{
-        const video = Video.findById(req.params.id)
+        const video = await Video.findById(req.params.id)
         if(!video) return next(apiError(404, "Video not found"))
         if(req.user.id === video.userId){
             await Video.findByIdAndDelete(req.params.id)
@@ -47,7 +47,7 @@ export const deleteVideo = async(req,res,next) => {
 
 export const getVideo = async(req,res,next) => {
     try{
-        const video = Video.findById(req.params.id)
+        const video = await Video.findById(req.params.id)
         !video ? next(apiError(404, "Video not found")) : res.status(200).json(video)
     }catch (err){
         next(apiError(err.status, err.message))
