@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc20688-cc00-4d32-bda2-c9b9c2c91fa8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/node/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/api/urls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/controllers/video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/middleware/error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/middleware/pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/models/comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/models/video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/routes/video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/utils/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/src/utils/error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/node/swagger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +66,7 @@
       <workItem from="1662786644609" duration="4155000" />
       <workItem from="1662790983440" duration="6186000" />
       <workItem from="1662813764020" duration="5404000" />
-      <workItem from="1662822167803" duration="3815000" />
+      <workItem from="1662822167803" duration="4034000" />
     </task>
     <servers />
   </component>
