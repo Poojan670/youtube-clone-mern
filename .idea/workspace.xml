@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc20688-cc00-4d32-bda2-c9b9c2c91fa8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Auth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +72,7 @@
       <workItem from="1662786644609" duration="4155000" />
       <workItem from="1662790983440" duration="6186000" />
       <workItem from="1662813764020" duration="5404000" />
-      <workItem from="1662822167803" duration="4183000" />
+      <workItem from="1662822167803" duration="7872000" />
     </task>
     <servers />
   </component>

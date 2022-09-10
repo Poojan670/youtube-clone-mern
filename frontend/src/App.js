@@ -5,6 +5,8 @@ import {useState} from "react";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from "./pages/Home/Home";
 import Video from "./pages/Video/Video";
+import Login from "./pages/Auth/Login";
+import Register from "./pages/Auth/Register";
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
                                   <Route path="video">
                                       <Route path=":id" element={<Video/>}/>
                                   </Route>
+                                  <Route path="login" element={<Login/>}></Route>
+                                  <Route path="register" element={<Register/>}></Route>
                               </Route>
                           </Routes>
                       </div>

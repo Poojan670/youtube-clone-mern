@@ -41,10 +41,12 @@ const Menu  = ({toggleTheme, theme}) => {
 
                 <div className="menu-login">
                     Sign in to like videos, comment and subscribe
+                    <Link to="login" style={{textDecoration:"none"}}>
                     <button className="menu-btn">
                         <AccountCircleOutlinedIcon/>
                         SIGN IN
                     </button>
+                    </Link>
                 </div>
 
                 <div className="menu-hr"/>
