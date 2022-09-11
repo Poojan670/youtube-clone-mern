@@ -8,7 +8,7 @@
     "start": "nodemon index.js --ignore client",
     "swagger-autogen": "node swagger.js",
     "client": "npm start ----prefix ../frontend",
-    "server": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
+    "dev": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
   },
   "keywords": [],
   "author": "",

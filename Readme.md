@@ -52,6 +52,8 @@ mongodb+
 
 <div class="termy">
 
+***CLIENT SETUP***
+
 Setup an .env.development file in frontend/ with following sample
 ```console
  // For Firebase Configurations
@@ -67,16 +69,7 @@ REACT_APP_APP_ID=""
 
 <div class="termy">
 
-Using npm package
-
-```console
-$ npm install
-```
-</div>
-
-<div class="termy">
-
-Using yarn package
+Install Using yarn package
 
 ```console
 $ yarn
@@ -91,12 +84,57 @@ $ yarn start:development
 ```
 </div>
 
+
+<div class="termy">
+
+***SERVER SETUP***
+
+Setup an .env file in backend/ with following sample
+```console
+ // For MongoDB & Node JS Configurations
+
+PORT=
+DB_HOST=''
+DB_NAME=''
+JWT_KEY=''
+
+```
+</div>
+
+<div class="termy">
+
+Install Using yarn package
+
+```console
+$ yarn
+```
+</div>
+
+<div class="termy">
+
+Run the Project
+```console
+$ yarn start
+```
+</div>
+
+
 <div class="termy">
 
 Follow the swagger Ui Documentation
 ```console
 http://{SERVER_HOST}:{SERVER_PORT}/doc
 ```
+</div>
+
+<div class="termy">
+
+Run the Project Concurrently At Once
+
+```console
+$ cd backend && yarn run dev
+```
+
 </div>
 
 # Try it out with [Docker](https://www.docker.com/)
