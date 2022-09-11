@@ -142,7 +142,7 @@ $ cd backend && yarn run dev
 
 <div class="termy">
 
-Dockerize Personally
+Dockerize Personally (OPTIONAL)
 
 ```console
 $ docker build -t ytc-backend .
