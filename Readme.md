@@ -87,6 +87,7 @@ $ yarn start:development
 
 <div class="termy">
 
+
 ***SERVER SETUP***
 
 Setup an .env file in backend/ with following sample
@@ -129,7 +130,7 @@ http://{SERVER_HOST}:{SERVER_PORT}/doc
 
 <div class="termy">
 
-Run the Project Concurrently At Once
+Run the Project Concurrently At Once (OPTIONAL)
 
 ```console
 $ cd backend && yarn run dev
