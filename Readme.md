@@ -106,9 +106,11 @@ http://{SERVER_HOST}:{SERVER_PORT}/doc
 Dockerize Personally
 
 ```console
-$ docker build -t ytc .
+$ docker build -t ytc-backend .
+$ docker build -t ytc-frontend .
 
-$ docker run -p 8090:8080 rdms-ytc
+$ docker run -p 5000:80 ytc-backend 
+$ docker run -p 3000:80 ytc-frontend 
 ```
 
 </div>
