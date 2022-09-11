@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc20688-cc00-4d32-bda2-c9b9c2c91fa8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/django/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/api/v1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/api/v1/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/core/current_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/core/pagination.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/ytc/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/video-sharing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/video-sharing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/django/src/user/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/django/src/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/django/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/django/src/api/v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/api/v1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/django/src/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/django/src/user/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/permssions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/django/src/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/django/src/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/django/ytc/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/ytc/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1662873382855" duration="5116000" />
       <workItem from="1662886296219" duration="1336000" />
       <workItem from="1662887651867" duration="26000" />
-      <workItem from="1662888780885" duration="185000" />
+      <workItem from="1662888780885" duration="2286000" />
     </task>
     <servers />
   </component>
