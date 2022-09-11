@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-    "swagger-autogen": "node swagger.js"
+    "start": "nodemon index.js --ignore client",
+    "swagger-autogen": "node swagger.js",
+    "client": "npm start ----prefix ../frontend",
+    "server": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
+    "concurrently": "^7.4.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
