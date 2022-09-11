@@ -24,6 +24,7 @@
 
 .app-container{
     display: flex;
+    overflow: hidden;
 }
 
 .app-main{

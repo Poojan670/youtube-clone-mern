@@ -1,21 +1,34 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Comments.css'
 import Comment from "../sub-components/Comment/Comment";
+import axios from "axios";
+import {useSelector} from "react-redux";
 
-const Comments = () => {
+const Comments = ({videoId}) => {
+
+    const currentUser = useSelector((state) => state.user);
+    const [comments, setComments] = useState([]);
+
+    useEffect(()=> {
+        const getComments = async () => {
+            try{
+                const res = await axios.get(`/comments/${videoId}`)
+                setComments(res.data)
+            }catch (err){
+                console.log(err.message)
+            }
+        }
+        getComments();
+    }, [videoId])
     return (
         <div className="comment-container">
             <div className="new-comment">
-                <img src="https://yt3.ggpht.com/yti/APfAmoE-Q0ZLJ4vk3vqmV4Kwp0sbrjxLyB8Q4ZgNsiRH=s88-c-k-c0x00ffffff-no-rj-mo" alt="" className="video-img"/>
+                <img src={currentUser.img} alt="" className="video-img"/>
                 <input type="text" placeholder="Add a comment..." className="comment-input"/>
             </div>
-            <Comment/>
-            <Comment/>
-            <Comment/>
-            <Comment/>
-            <Comment/>
-            <Comment/>
-            <Comment/>
+            {comments.map(comment=> {
+                <Comment key={comment._id} comment={comment}/>
+            })}
         </div>
     )
 }

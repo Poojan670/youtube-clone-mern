@@ -9,6 +9,7 @@
     "@mui/material": "^5.10.4",
     "@reduxjs/toolkit": "^1.8.5",
     "axios": "^0.27.2",
+    "env-cmd": "^10.1.0",
     "firebase": "^9.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,7 +22,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "start:local": "env-cmd -f .env react-scripts  start",
+    "start:development": "env-cmd -f .env.development react-scripts  start",
+    "build:local": "set \"GENERATE_SOURCEMAP=false\" && env-cmd -f .env react-scripts  build"
   },
   "eslintConfig": {
     "extends": [

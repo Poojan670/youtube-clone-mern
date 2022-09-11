@@ -15,6 +15,7 @@ import axios from "axios";
 import {DISLIKE, FETCH_FAILURE, FETCH_START, FETCH_SUCCESS, LIKE} from "../../Redux/Video/Video";
 import {format} from "timeago.js";
 import {SUBSCRIPTION} from "../../Redux/User/User";
+import Recommend from "../../components/Recommend/Recommend";
 
 const Video = () => {
     const {currentUser} = useSelector((state)=> state.user)
@@ -61,8 +62,7 @@ const Video = () => {
         <div className="video-container">
             <div className="video-content">
                 <div className="video-wrapper">
-                    <video className="video-frame" src={currentVideo.videoUrl}>
-
+                    <video className="video-frame" src={currentVideo.videoUrl} controls>
                     </video>
                 </div>
                 <h1 className="video-title">{currentVideo.title}</h1>
@@ -106,19 +106,10 @@ const Video = () => {
                 </div>
 
                 <div className="menu-hr">
-                    <Comments/>
+                    <Comments videoId={currentVideo._id}/>
                 </div>
             </div>
-            {/*<div className="video-recommend">*/}
-            {/*    <Card type="sm"/>*/}
-            {/*    <Card type="sm"/>*/}
-            {/*    <Card type="sm"/>*/}
-            {/*    <Card type="sm"/>*/}
-            {/*    <Card type="sm"/>*/}
-            {/*    <Card type="sm"/>*/}
-            {/*    <Card type="sm"/>*/}
-            {/*</div>*/}
-
+            <Recommend tags={currentVideo.tags}/>
         </div>
     )
 }

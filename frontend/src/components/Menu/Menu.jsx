@@ -42,7 +42,7 @@ const Menu  = ({toggleTheme, theme}) => {
                 <Link to="/" className="router-link">
                 <div className="menu-logo">
                     <img src={Youtube} alt="youtube" className="menu-img"/>
-                    PoojanTube<span className="menu-country">{state}</span>
+                    YouTube<span className="menu-country">{state}</span>
                 </div>
                 </Link>
                 <div className="menu-item"><HomeIcon/>Home</div>
@@ -71,7 +71,7 @@ const Menu  = ({toggleTheme, theme}) => {
                     <div className="menu-hr"/>
                 </>}
 
-                <h2 className="menu-title">BEST OF POOJANTUBE</h2>
+                <h2 className="menu-title">BEST OF YOUTUBE</h2>
                 <div className="menu-item"><LibraryMusicOutlinedIcon/>Music</div>
                 <div className="menu-item"> <SportsBasketballOutlinedIcon />Sports</div>
                 <div className="menu-item"><SportsEsportsOutlinedIcon />Gaming</div>

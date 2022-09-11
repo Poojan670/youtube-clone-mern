@@ -2,16 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc20688-cc00-4d32-bda2-c9b9c2c91fa8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/django/src/user/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/django/src/user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Recommend/Recommend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Recommend/Recommend.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/VideoUpload/VideoUpload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/VideoUpload/VideoUpload.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/django/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/django/src/api/v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/api/v1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/django/src/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/django/src/user/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/permssions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/django/src/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/django/src/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/src/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/django/ytc/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/django/ytc/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Card/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Card/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Comments/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Comments/Comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/sub-components/Comment/Comment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/sub-components/Comment/Comment.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Auth/Auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Auth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Video/Video.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Video/Video.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +73,11 @@
       <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Tasks\node-projects\video-sharing\backend" />
       <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\pages\Video" />
       <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\pages\Home" />
       <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\components\Navbar" />
       <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\components\Menu" />
-      <recent name="C:\Tasks\node-projects\video-sharing\frontend\src\components\Card" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,7 +103,8 @@
       <workItem from="1662873382855" duration="5116000" />
       <workItem from="1662886296219" duration="1336000" />
       <workItem from="1662887651867" duration="26000" />
-      <workItem from="1662888780885" duration="2286000" />
+      <workItem from="1662888780885" duration="3125000" />
+      <workItem from="1662911905048" duration="8407000" />
     </task>
     <servers />
   </component>
