@@ -19,6 +19,7 @@ import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import {SettingsBrightnessOutlined} from "@mui/icons-material";
 import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
 
 const Menu  = ({toggleTheme, theme}) => {
 
@@ -34,6 +35,7 @@ const Menu  = ({toggleTheme, theme}) => {
             })
     },[])
 
+    const currentUser = useSelector(state => state.user)
     return (
         <div className="menu-container">
             <div className="menu-wrapper">
@@ -56,17 +58,18 @@ const Menu  = ({toggleTheme, theme}) => {
 
                 <div className="menu-hr"/>
 
-                <div className="menu-login">
-                    Sign in to like videos, comment and subscribe
-                    <Link to="login" style={{textDecoration:"none"}}>
-                    <button className="menu-btn">
-                        <AccountCircleOutlinedIcon/>
-                        SIGN IN
-                    </button>
-                    </Link>
-                </div>
-
-                <div className="menu-hr"/>
+                { !currentUser && <>
+                    <div className="menu-login">
+                        Sign in to like videos, comment and subscribe
+                        <Link to="login" style={{textDecoration: "none"}}>
+                            <button className="menu-btn">
+                                <AccountCircleOutlinedIcon/>
+                                SIGN IN
+                            </button>
+                        </Link>
+                    </div>
+                    <div className="menu-hr"/>
+                </>}
 
                 <h2 className="menu-title">BEST OF POOJANTUBE</h2>
                 <div className="menu-item"><LibraryMusicOutlinedIcon/>Music</div>

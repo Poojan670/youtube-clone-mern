@@ -5,7 +5,7 @@ import {useState} from "react";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from "./pages/Home/Home";
 import Video from "./pages/Video/Video";
-import Login from "./pages/Auth/Login";
+import Login from "./pages/Auth/Login.jsx";
 import Register from "./pages/Auth/Register";
 
 

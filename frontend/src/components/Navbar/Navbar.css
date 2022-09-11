@@ -47,3 +47,18 @@
     align-items: center;
     gap: 5px;
 }
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: var(---text);
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #999;
+}

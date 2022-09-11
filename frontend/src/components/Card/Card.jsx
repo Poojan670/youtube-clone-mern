@@ -18,7 +18,7 @@ const Card = ({type, video}) => {
 
 
     return (
-        <Link to="/video/test" className="router-link">
+        <Link to={`video/${video._id}`} className="router-link">
             <div className={`${type === "sm" ? "card-container-recommend" : "card-container"}`}>
                 <img src={video.imgUrl}
                      alt="card" className={`${type === "sm" ? "card-img-recommend" : "card-img"}`}/>

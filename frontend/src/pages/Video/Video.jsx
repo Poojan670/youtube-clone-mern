@@ -1,34 +1,88 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Video.css'
-import {ThumbUpOffAltOutlined} from "@mui/icons-material";
-import {ThumbDownOffAltOutlined} from "@mui/icons-material";
-import {ReplyOutlined} from "@mui/icons-material";
-import {AddTaskOutlined} from "@mui/icons-material";
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import {
+    AddTaskOutlined,
+    ReplyOutlined,
+    ThumbDown,
+    ThumbDownOffAltOutlined,
+    ThumbUp,
+    ThumbUpOffAltOutlined
+} from "@mui/icons-material";
 import Comments from "../../components/Comments/Comments";
-import Card from "../../components/Card/Card";
+import {useDispatch, useSelector} from "react-redux";
+import {useLocation} from "react-router-dom";
+import axios from "axios";
+import {DISLIKE, FETCH_FAILURE, FETCH_START, FETCH_SUCCESS, LIKE} from "../../Redux/Video/Video";
+import {format} from "timeago.js";
+import {SUBSCRIPTION} from "../../Redux/User/User";
 
 const Video = () => {
+    const {currentUser} = useSelector((state)=> state.user)
+    const {currentVideo} = useSelector((state)=> state.video)
+    const dispatch = useDispatch();
+    const path = useLocation().pathname.split("/")[2];
+
+    const [channel, setChannel] = useState({})
+
+    useEffect(()=> {
+        const getVideoData =async () => {
+            dispatch(FETCH_START())
+            try{
+                const video = await axios.get(`/videos/find/${path}`)
+                const channel = await axios.get(`/users/${video.data.userId}`)
+                setChannel(channel.data)
+                dispatch(FETCH_SUCCESS(video.data))
+            }catch (err){
+                dispatch(FETCH_FAILURE())
+                console.log(err.message)
+            }
+        }
+        getVideoData();
+    }, [path, dispatch])
+
+    const handleLike = async () => {
+        await axios.put(`/users/like/${currentVideo._id}`)
+        dispatch(LIKE(currentUser._id))
+    }
+    const handleDislike = async () => {
+        await axios.put(`/users/dislike/${currentVideo._id}`)
+        dispatch(DISLIKE(currentUser._id))
+    }
+
+    const handleSubscribe = async () => {
+        console.log(currentUser)
+        currentUser.subscribedUsers.includes(channel._id)
+            ? await axios.put(`/users/unsub/${channel._id}`)
+            : await axios.put(`/users/sub/${channel._id}`);
+        dispatch(SUBSCRIPTION(channel._id));
+    };
+
     return (
         <div className="video-container">
             <div className="video-content">
                 <div className="video-wrapper">
-                    <iframe
-                        width="100%"
-                        height="720"
-                        src="https://www.youtube.com/embed/k3Vfj-e1Ma4"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
+                    <video className="video-frame" src={currentVideo.videoUrl}>
+
+                    </video>
                 </div>
-                <h1 className="video-title">How to be a millionaire</h1>
+                <h1 className="video-title">{currentVideo.title}</h1>
                 <div className="video-details">
-                    <div className="video-info">7,00,000 views : Oct 2, 2022</div>
+                    <div className="video-info">{currentVideo.views} views : {format(currentVideo.createdAt)}</div>
                     <div className="video-buttons">
-                        <div className="video-btn"><ThumbUpOffAltOutlined/>123</div>
-                        <div className="video-btn"><ThumbDownOffAltOutlined/>Dislike</div>
+                        <div className="video-btn" onClick={handleLike}>
+                            {
+                                currentVideo.likes?.includes(currentUser._id)
+                                ? (<ThumbUp/>) :
+                                (<ThumbUpOffAltOutlined/>)
+                            }
+                            {currentVideo.likes?.length}</div>
+                        <div className="video-btn" onClick={handleDislike}>
+                            {
+                                currentVideo.dislikes?.includes(currentUser._id)
+                                ? (<ThumbDown/>)
+                                : <ThumbDownOffAltOutlined/>
+                            }
+                            Dislike</div>
                         <div className="video-btn"><ReplyOutlined/>Share</div>
                         <div className="video-btn"><AddTaskOutlined/>Save</div>
                     </div>
@@ -38,29 +92,32 @@ const Video = () => {
 
                 <div className="video-channel">
                     <div className="video-channel-info">
-                        <img src="https://yt3.ggpht.com/yti/APfAmoE-Q0ZLJ4vk3vqmV4Kwp0sbrjxLyB8Q4ZgNsiRH=s88-c-k-c0x00ffffff-no-rj-mo" alt="video-img" className="video-img"/>
+                        <img src={channel.img} alt="video-img" className="video-img"/>
                         <div className="video-channel-details">
-                            <span className="video-channel-name">Poojan Pradhan</span>
-                            <span className="video-sub-counter">200k Subscribers</span>
-                            <p className="video-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eius excepturi incidunt natus provident quam rerum ullam? Eos laudantium libero nulla officia perspiciatis quod. Atque deleniti eos ex necessitatibus officia?</p>
+                            <span className="video-channel-name">{channel.name}</span>
+                            <span className="video-sub-counter">{channel.subscribers} Subscribers</span>
+                            <p className="video-description">{currentVideo.desc}</p>
                         </div>
                     </div>
-                    <button type="button" className="video-subscribe">Subscribe</button>
+                    <button type="button" className="video-subscribe" onClick={handleSubscribe}>{
+                        currentUser.subscribedUsers?.includes(channel._id)
+                        ? "SUBSCRIBED" : "SUBSCRIBE"
+                    }</button>
                 </div>
 
                 <div className="menu-hr">
                     <Comments/>
                 </div>
             </div>
-            <div className="video-recommend">
-                <Card type="sm"/>
-                <Card type="sm"/>
-                <Card type="sm"/>
-                <Card type="sm"/>
-                <Card type="sm"/>
-                <Card type="sm"/>
-                <Card type="sm"/>
-            </div>
+            {/*<div className="video-recommend">*/}
+            {/*    <Card type="sm"/>*/}
+            {/*    <Card type="sm"/>*/}
+            {/*    <Card type="sm"/>*/}
+            {/*    <Card type="sm"/>*/}
+            {/*    <Card type="sm"/>*/}
+            {/*    <Card type="sm"/>*/}
+            {/*    <Card type="sm"/>*/}
+            {/*</div>*/}
 
         </div>
     )

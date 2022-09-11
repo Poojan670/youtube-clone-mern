@@ -2,20 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fc20688-cc00-4d32-bda2-c9b9c2c91fa8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/Redux/Store/Store.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Redux/User/User.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Redux/Video/Video.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/firebase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node/src/controllers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/src/controllers/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node/src/routes/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/src/routes/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node/src/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/src/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node/src/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/src/controllers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/src/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/node/src/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node/src/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Card/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Auth/Auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Auth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Auth/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Video/Video.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Video/Video.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Video/Video.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,19 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.13.1",
-    "javascript.nodejs.core.library.typings.version": "16.11.58",
-    "last_opened_file_path": "C:/Tasks/node-projects/video-sharing/backend/node/src/middleware",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.58&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Tasks/node-projects/video-sharing/backend/node/src/middleware&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Tasks\node-projects\video-sharing\backend\node\src\middleware" />
@@ -79,7 +86,10 @@
       <workItem from="1662786644609" duration="4155000" />
       <workItem from="1662790983440" duration="6186000" />
       <workItem from="1662813764020" duration="5404000" />
-      <workItem from="1662822167803" duration="13825000" />
+      <workItem from="1662822167803" duration="14484000" />
+      <workItem from="1662864283987" duration="1110000" />
+      <workItem from="1662865425026" duration="7004000" />
+      <workItem from="1662873382855" duration="4380000" />
     </task>
     <servers />
   </component>
